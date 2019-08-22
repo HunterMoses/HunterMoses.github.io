@@ -1,0 +1,22 @@
+#intro {
+    display: grid;
+    grid-template-areas:
+     "header header"
+     "picture text";
+     grid-template-columns: 1fr 2fr;
+     grid-column-gap: 2.5rem;
+}
+
+#intro > h2 {
+    grid-area: header;
+}
+
+#intro > span {
+    grid-area: picture;
+    margin: 0;
+    padding: 1rem;
+}
+
+#intro > p {
+    grid-area: text;
+}
